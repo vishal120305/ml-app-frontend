@@ -1,0 +1,188 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.App-header p {
+  margin: 10px 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* .backend-status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.backend-status.healthy {
+  background: rgba(46, 125, 50, 0.3);
+}
+
+.backend-status.unhealthy {
+  background: rgba(198, 40, 40, 0.3);
+} */
+
+.App-main {
+  flex: 1;
+}
+
+.prediction-form {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.prediction-form h2 {
+  margin-top: 0;
+  color: #555;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.predict-button {
+  background: #6e8efb;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.predict-button:hover {
+  background: #5a7de4;
+}
+
+.loading {
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #6e8efb;
+  text-align: center;
+}
+
+.error {
+  padding: 20px;
+  background: #ffebee;
+  color: #c62828;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.error h3 {
+  margin-top: 0;
+}
+
+.result-display {
+  background: #e8f5e9;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.result-display h2 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.prediction-value {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.prediction-value span {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.prediction-explanation {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.App-footer {
+  margin-top: 40px;
+  padding: 20px;
+  color: #777;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+  
+  .App-header {
+    padding: 20px;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .backend-status {
+    position: static;
+    margin-top: 15px;
+  }
+  
+  .prediction-form {
+    padding: 15px;
+  }
+}
